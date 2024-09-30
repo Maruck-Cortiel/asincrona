@@ -1,0 +1,162 @@
+/* woooooooooooooooooooooooooooow */
+/*main {
+    padding: 3rem;
+    border: 10px black solid;
+    margin: 5rem;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nerko+One&display=swap');
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.parrafo{
+    line-height: 1.5;
+    color: rgb(1, 0, 5);
+    font-family: cursive;
+}
+ body{
+    background-color: rgb(240, 222, 250);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+ }
+ main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 2rem;
+    background-color: rgb(220, 255, 249);
+ }
+ header{
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+ #logoheader{
+    width: 150px;
+ }
+ svg{
+    width: 100%;
+}
+ footer{
+    background-color: rgb(46, 62, 73);
+    padding: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+h1 {
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+h3 {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.tit{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+p{
+    font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  padding-bottom: 1rem;
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1rem;
+
+}
+header a {
+    text-decoration: none;
+    color: darkorchid;
+    transition: all, .4s ease 0%;
+}
+header a:hover {
+    color: crimson;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+} 
+figcaption {
+    font-family: monospace;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+pre, cite{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    line-height: 2;
+}
+cite{
+    font-size: 2rem;
+
+}
+
+@media (max-width: 600px) {
+    body {
+       background-color: rgb(193, 230, 222);
+   }
+   #container{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto 1fr auto;
+       height: 100vh;
+       gap: 1rem;
+   }
+} 
+@media (min-width: 600px) {
+  body {
+       background-color: rgb(240, 222, 250);
+   }
+
+.container {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-rows: auto 2fr auto;
+   height: 100vh;
+   gap: 1rem;
+   grid-template-areas: 
+   "cabeza cabeza cabeza"
+   "principal principal  lado"
+   "pie pie pie"
+   ;
+}
+header{
+   grid-area: cabeza;
+}
+main{
+   grid-area: principal;
+}
+aside{
+   grid-area: lado;
+}
+footer{
+   grid-area: pie;
+}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/android-chrome-512x512.png">  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>           
+             <img src="img/sexsalud.png" alt="logo" id="logoheader">
+            <ol>
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="#"></a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h3>Registrate</h3>
+
+        <form action="" method="get">
+        <label for="name">Nombre</label>    
+        <input type="text" name="fname">
+        <label for="name">Apellido</label>    
+        <input type="text" name="lname">
+        <label for="email">E-mail</label>    
+        <input type="email" name="email">
+    </form>
+    <form action="" method="get">
+        <fieldset>
+            <legend> ¿Qué edad tienes?</legend>
+            <label><input type="radio" name="radio" valor="html">12 - 18 años</label>
+            <label><input type="radio" name="radio" valor="css">18 - 25 años</label>
+            <label><input type="radio" name="radio" valor="js">+ 25 años</label>
+
+        </fieldset>
+    </form>
+    <form action="">
+    <label for="metodos">¿Què Metodo anticonceptivo usas usualmente?</label>
+        <input list="metodos" name="metodos" placeholder="Metdos anticonceptivos">
+        <datalist>
+            <select>
+            <optgroup>
+                <option value="edge">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Opera">
+            </optgroup>
+            </select>
+        </datalist>
+
+        <button>save</button>
+
+        <label for="file">file</label>
+        <progress value="32" max="100">32%</progress>
+    </form>
+
+
+
+    </form>
+    </main>
+
+    <footer>
+        <p>SEXSALUD. ®</p>
+    </footer>
+</div>
+</body>
+</html>
